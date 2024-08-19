@@ -3,7 +3,6 @@
 const {
   EntityTypes,
   VendorTiers,
-  VendorStatus,
   VendorStatusCode,
   VendorApplicationStatus,
   TournamentApplicationStatus,
@@ -17,7 +16,6 @@ module.exports = {
   Tasks,
   EntityTypes,
   VendorTiers,
-  VendorStatus,
   VendorStatusCode,
   VendorApplicationStatus,
   TournamentApplicationStatus,
