@@ -69,7 +69,6 @@ const TotalTurnover = Object.freeze({
 module.exports = {
   EntityTypes,
   VendorTiers,
-  VendorStatus,
   VendorStatusCode,
   VendorApplicationStatus,
   TournamentApplicationStatus,
