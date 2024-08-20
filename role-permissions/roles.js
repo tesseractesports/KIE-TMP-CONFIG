@@ -16,6 +16,7 @@ const Tasks = Object.freeze({
     AppCoreConfig: 'AppCoreConfig',
     createTournament: 'createTournament',
     manageTournaments: 'manageTournaments',
+    manageCalendar: 'manageCalendar'
   });
   
 
