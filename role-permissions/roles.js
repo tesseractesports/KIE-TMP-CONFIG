@@ -18,7 +18,10 @@ const Tasks = Object.freeze({
     manageTournaments: 'manageTournaments',
     manageCalendar: 'manageCalendar',
     listCalendarEvents: 'listCalendarEvents',
-    listTournaments: 'listTournaments'
+    listTournaments: 'listTournaments',
+    viewTournament: 'viewTournament',
+    updateTournament: 'updateTournament',
+    approveTournament: 'approveTournament'
   });
   
 
