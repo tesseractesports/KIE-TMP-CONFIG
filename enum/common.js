@@ -66,6 +66,92 @@ const TotalTurnover = Object.freeze({
   OneMillion: "1000000",
 });
 
+const steps = [
+  "generalInformation",
+  "companyInformation",
+  "businessInformation",
+  "legalInformation",
+  "apply",
+];
+
+const vendor = Object.freeze({
+  _id: "",
+  isTermsAccepted: false,
+  status: "",
+  statusCode: 0,
+  firstName: "",
+  domain: "",
+  lastName: "",
+  designation: "",
+  companyName: "",
+  dateOfBirth: "",
+  companyMarketName: "",
+  companyEmail: "",
+  companyPhone: "",
+  companyBio: "",
+  website: "",
+  logo: "",
+  email: "",
+  phone: "",
+  country: "",
+  state: "",
+  city: "",
+  countryId: "",
+  stateId: "",
+  cityId: "",
+  address: "",
+  totalTurnover: "",
+  operationalStaffCount: 0,
+  contentStaffCount: 0,
+  designStaffCount: 0,
+  productionStaffCount: 0,
+  otherStaffCount: 0,
+  categoryA: 0,
+  categoryB: 0,
+  categoryC: 0,
+  tournaments: [
+    {
+      tournamentName: "",
+      prizePool: "",
+      reportCertificate: "",
+    },
+  ],
+  legalInformation: {
+    legalName: "",
+    entityType: "",
+    // pan: "",
+    gst: "",
+    incorporationDate: "",
+    country: "",
+    countryId: "",
+    stateId: "",
+    cityId: "",
+    state: "",
+    city: "",
+    gstCertificate: "",
+    incorporationCertificate: "",
+  },
+  applicationDate: "",
+});
+
+const entityType = [
+  { name: "Please select entity" },
+  { name: "public limited" },
+  { name: "private limited" },
+  { name: "partnership" },
+  { name: "sole proprietorship" },
+  { name: "limited liability partnership" },
+  { name: "others" },
+];
+
+const stepLabels = [
+  "ADMIN DETAILS ",
+  "COMPANY DETAILS",
+  "BUSINESS DETAILS",
+  "LEGAL DETAILS",
+  "PREVIEW & SUBMIT",
+];
+
 module.exports = {
   EntityTypes,
   VendorTiers,
@@ -73,5 +159,9 @@ module.exports = {
   VendorApplicationStatus,
   TournamentApplicationStatus,
   TotalTurnover,
-  TournamentTier
+  TournamentTier,
+  steps,
+  vendor,
+  entityType,
+  stepLabels
 };
