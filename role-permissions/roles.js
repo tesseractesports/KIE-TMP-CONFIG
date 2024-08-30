@@ -21,7 +21,8 @@ const Tasks = Object.freeze({
     listTournaments: 'listTournaments',
     viewTournament: 'viewTournament',
     updateTournament: 'updateTournament',
-    approveTournament: 'approveTournament'
+    approveTournament: 'approveTournament',
+    inviteVendorAdminUser:'inviteVendorAdminUser'
   });
   
 
