@@ -25,7 +25,7 @@ const Tasks = Object.freeze({
     inviteVendorAdminUser:'inviteVendorAdminUser'
   });
   
-  const roles = Object.freeze({
+  const Roles = Object.freeze({
     vendor_super_admin: 'vendor_super_admin',
     vendor_manager: 'vendor_manager',
     vendor_assistant_manager: 'vendor_assistant_manager',
@@ -38,7 +38,7 @@ const Tasks = Object.freeze({
     admin_creative_manager: 'admin_creative_manager',
   });
 
-  const vendorRoles = [
+  const VendorRoles = [
     roles.vendor_admin,
     roles.vendor_super_admin,
     roles.vendor_assistant_manager,
@@ -46,13 +46,13 @@ const Tasks = Object.freeze({
     roles.vendor_manager,
   ];
   
-  const adminRoles = [roles.admin, roles.super_admin, roles.admin_manager, roles.admin_creative_manager];
+  const AdminRoles = [roles.admin, roles.super_admin, roles.admin_manager, roles.admin_creative_manager];
 
   
   module.exports = {
     Tasks,
-    roles,
-    vendorRoles,
-    adminRoles,
+    Roles,
+    VendorRoles,
+    AdminRoles,
   };
   
