@@ -38,15 +38,21 @@ const Tasks = Object.freeze({
     admin_creative_manager: 'admin_creative_manager',
   });
 
-  const VendorRoles = [
-    roles.vendor_admin,
-    roles.vendor_super_admin,
-    roles.vendor_assistant_manager,
-    roles.vendor_creative_manager,
-    roles.vendor_manager,
-  ];
+  const VendorRoles = Object.freeze({
+    vendor_super_admin: 'vendor_super_admin',
+    vendor_manager: 'vendor_manager',
+    vendor_assistant_manager: 'vendor_assistant_manager',
+    vendor_creative_manager: 'vendor_creative_manager',
+    vendor_admin: 'vendor_admin',
+  });
   
-  const AdminRoles = [roles.admin, roles.super_admin, roles.admin_manager, roles.admin_creative_manager];
+  const AdminRoles = Object.freeze({
+    
+    admin: 'admin',
+    super_admin: 'super_admin',
+    admin_manager: 'admin_manager',
+    admin_creative_manager: 'admin_creative_manager',
+  });
 
   
   module.exports = {
