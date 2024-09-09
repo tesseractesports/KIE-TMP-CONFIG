@@ -9,7 +9,7 @@ const {
   TotalTurnover,
   TournamentTier,
 } = require("./enum/common");
-const { Tasks } = require("./role-permissions/roles");
+const { Tasks, roles, vendorRoles, adminRoles } = require("./role-permissions/roles");
 const { Validations } = require("./validations/validations");
 
 module.exports = {
@@ -21,5 +21,8 @@ module.exports = {
   TournamentApplicationStatus,
   TotalTurnover,
   TournamentTier,
-  Validations
+  Validations,
+  roles,
+  vendorRoles,
+  adminRoles,
 };
