@@ -31,12 +31,7 @@ const Tasks = Object.freeze({
     teamPlayer: 'teamPlayer',
     teamSubstitute: 'teamSubstitute',
     
-    teamJoinRequest: 'teamJoinRequest',
-    teamJoinRequestList: 'teamJoinRequestList',
-    teamInviteRequest: 'teamInviteRequest',
-    changePlayerRole: 'changePlayerRole',
-    changeManagerRole: 'changeManagerRole',
-    changeOwnerRole: 'changeOwnerRole',
+    teamJoinRequest: 'teamJoinRequest',  
     teamCreate : 'teamCreate',
     teamUpdate : 'teamUpdate',
     teamDelete: 'teamDelete',
