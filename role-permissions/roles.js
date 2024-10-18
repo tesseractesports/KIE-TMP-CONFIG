@@ -22,7 +22,27 @@ const Tasks = Object.freeze({
     viewTournament: 'viewTournament',
     updateTournament: 'updateTournament',
     approveTournament: 'approveTournament',
-    inviteVendorAdminUser:'inviteVendorAdminUser'
+    inviteVendorAdminUser:'inviteVendorAdminUser',
+
+
+    igl: 'igl',
+    teamOwner: 'teamOwner',
+    teamManager: 'teamManager',
+    teamPlayer: 'teamPlayer',
+    teamSubstitute: 'teamSubstitute',
+    
+    teamJoinRequest: 'teamJoinRequest',
+    teamJoinRequestList: 'teamJoinRequestList',
+    teamInviteRequest: 'teamInviteRequest',
+    changePlayerRole: 'changePlayerRole',
+    changeManagerRole: 'changeManagerRole',
+    changeOwnerRole: 'changeOwnerRole',
+    teamCreate : 'teamCreate',
+    teamUpdate : 'teamUpdate',
+    teamDelete: 'teamDelete',
+    teamList: 'teamList',
+    teamView: 'teamView',
+
   });
   
   const Roles = Object.freeze({
@@ -36,6 +56,14 @@ const Tasks = Object.freeze({
     super_admin: 'super_admin',
     admin_manager: 'admin_manager',
     admin_creative_manager: 'admin_creative_manager',
+
+    igl: 'igl',
+    team_owner: 'team_owner',
+    team_manager: 'team_manager',
+    team_player: 'team_player',
+    team_substitute: 'team_substitute',
+
+
   });
 
   const VendorRoles = Object.freeze({
@@ -54,11 +82,20 @@ const Tasks = Object.freeze({
     admin_creative_manager: 'admin_creative_manager',
   });
 
+  const TeamRoles = Object.freeze({
+    igl: 'igl',
+    team_owner: 'team_owner',
+    team_manager: 'team_manager',
+    team_player: 'team_player',
+    team_substitute: 'team_substitute',
+  });
+
   
   module.exports = {
     Tasks,
     Roles,
     VendorRoles,
     AdminRoles,
+    TeamRoles
   };
   
