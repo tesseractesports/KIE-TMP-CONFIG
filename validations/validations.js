@@ -6,8 +6,16 @@ const dateString = Joi.string().regex(/^\d{4}-\d{2}-\d{2}$/); // Changed to ISO 
 const filePNGJPG = Joi.string().regex(/\.(png|jpg)$/i);
 const filePDFJPG = Joi.string().regex(/\.(pdf|jpg)$/i);
 const website = Joi.string().regex(/^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/|www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/);
+const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~`!@#$%^&*()_–+=\{\[\}\}|:;"'<>,.?\/\-])[A-Za-z\d~`!@#$%^&*()_–+=\{\[\}\}|:;"'<>,.?\/\-]{8,}$/;
 
 
+const validatePassword = (password) => {
+  if (!passwordPattern.test(password)) {
+    return false;
+  }
+  return true;
+};
+ 
 
 const Validations =  Object.freeze({
     email,
@@ -15,7 +23,8 @@ const Validations =  Object.freeze({
     dateString,
     filePNGJPG,
     filePDFJPG,
-    website
+    website,
+    validatePassword
 });
 
 exports.Validations = Validations;
