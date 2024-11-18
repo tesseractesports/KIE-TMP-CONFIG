@@ -23,6 +23,7 @@ const Tasks = Object.freeze({
     updateTournament: 'updateTournament',
     approveTournament: 'approveTournament',
     inviteVendorAdminUser:'inviteVendorAdminUser',
+    changeTier: 'changeTier',
 
 
     igl: 'igl',
