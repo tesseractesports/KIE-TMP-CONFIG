@@ -66,12 +66,12 @@ const TotalTurnover = Object.freeze({
   OneMillion: "1000000",
 });
 
-module.exports = {
+export default {
   EntityTypes,
   VendorTiers,
   VendorStatusCode,
   VendorApplicationStatus,
   TournamentApplicationStatus,
   TotalTurnover,
-  TournamentTier
+  TournamentTier,
 };
